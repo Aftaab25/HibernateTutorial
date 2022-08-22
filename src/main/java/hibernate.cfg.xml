@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mariadb://localhost:3306/myhiber</property>
+		<property name="connection.username">admin</property>
+		<property name="connection.password">aftaab25</property>
+		<property name="dialect">org.hibernate.dialect.MariaDB106Dialect</property>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<mapping class="com.chromiumhead.MavenTut.Student" />
+		<mapping class="com.chromiumhead.MavenTut.Address" />
+	</session-factory>
+</hibernate-configuration>
